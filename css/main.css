@@ -22,7 +22,7 @@ h1 { font-family: 'Monda', sans-serif; font-weight:700; font-size: 80px; margin-
 h1 a { text-decoration: none; color: #000100; }
 h2 { font-family: 'Geo', sans-serif; font-size: 40px; color:#660000; }
 
-h3 { font-family: 'Monda', sans-serif; font-size: 26px; margin-bottom: 6px;}
+h3 { font-family: 'Monda', sans-serif; font-size: 26px; margin-bottom: 6px; padding-top:20px;}
 
 p { margin-top: 0px;}
 
