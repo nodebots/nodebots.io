@@ -1,0 +1,29 @@
+body { 
+	margin: 0px;
+	padding: 0px;
+	background: #f2da46 url(/img/j5.png) bottom right no-repeat;
+
+	background-attachment: fixed;
+	margin: 0;
+	font: 16px/22px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #333;
+}
+a, a:link, a:visited { color: #000100; font-weight: bold;}
+#wrapper { margin: 0px auto; background: white; padding: 0px; width: 720px;}
+#holder { padding: 0px 20px 60px;line-height: 1.2;}
+
+#header { padding-top: 20px; text-align: center;padding-bottom: 00px;}
+
+#organizers, #footer { font-size: 70%; background: #000100; padding: 8px; text-align: center; color:white;}
+
+#organizers p, #footer p { padding: 0px; margin: 2px 0px;}
+#footer a, #footer a:visited, #footer a:link, #organizers a, #organizers a:visited, #organizers a:link  { color:#efefef;}
+h1 { font-family: 'Monda', sans-serif; font-weight:700; font-size: 80px; margin-bottom: 20px; margin-top: 20px;}
+h1 a { text-decoration: none; color: #000100; }
+h2 { font-family: 'Geo', sans-serif; font-size: 40px; }
+
+h3 { font-family: 'Geo', sans-serif; font-size: 30px; margin-bottom: 0px;}
+
+p { margin-top: 0px;}
+
+#upcoming { text-align: center; padding: 0px 0px 20px 0px;}
