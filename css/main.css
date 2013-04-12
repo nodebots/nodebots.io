@@ -20,9 +20,9 @@ a, a:link, a:visited { color: #000100; font-weight: bold;}
 #footer a, #footer a:visited, #footer a:link, #organizers a, #organizers a:visited, #organizers a:link  { color:#efefef;}
 h1 { font-family: 'Monda', sans-serif; font-weight:700; font-size: 80px; margin-bottom: 20px; margin-top: 20px;}
 h1 a { text-decoration: none; color: #000100; }
-h2 { font-family: 'Geo', sans-serif; font-size: 40px; }
+h2 { font-family: 'Geo', sans-serif; font-size: 40px; color:#660000; }
 
-h3 { font-family: 'Geo', sans-serif; font-size: 30px; margin-bottom: 0px;}
+h3 { font-family: 'Monda', sans-serif; font-size: 26px; margin-bottom: 0px;}
 
 p { margin-top: 0px;}
 
