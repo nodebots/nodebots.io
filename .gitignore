@@ -1,0 +1,6 @@
+*.un~
+/build
+/node_modules
+/public/css/*.css
+.notes
+/_site
