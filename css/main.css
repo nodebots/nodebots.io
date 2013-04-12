@@ -9,7 +9,7 @@ body {
 	color: #333;
 }
 a, a:link, a:visited { color: #000100; font-weight: bold;}
-#wrapper { margin: 0px auto; background: white; padding: 0px; width: 720px;}
+#wrapper { margin: 0px auto; background: white; padding: 0px; width: 720px; border: 1px solid #6d6d6d; border-top: 0px; border-bottom: 0px}
 #holder { padding: 0px 20px 60px;line-height: 1.2;}
 
 #header { padding-top: 20px; text-align: center;padding-bottom: 00px;}
