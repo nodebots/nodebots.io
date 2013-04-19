@@ -1,3 +1,4 @@
+article:after,aside:after,div:after,form:after,header:after,nav:after,section:after,ul:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
 body { 
 	margin: 0px;
 	padding: 0px;
@@ -9,7 +10,7 @@ body {
 	color: #333;
 }
 a, a:link, a:visited { color: #000100; font-weight: bold;}
-#wrapper { margin: 0px auto; background: white; padding: 0px; width: 720px;}
+#wrapper { margin: 0px auto; background: white; padding: 0px; width: 720px; border: 1px solid #6d6d6d; border-top: 0px; border-bottom: 0px}
 #holder { padding: 0px 20px 60px;line-height: 1.2;}
 
 #header { padding-top: 20px; text-align: center;padding-bottom: 00px;}
@@ -20,10 +21,30 @@ a, a:link, a:visited { color: #000100; font-weight: bold;}
 #footer a, #footer a:visited, #footer a:link, #organizers a, #organizers a:visited, #organizers a:link  { color:#efefef;}
 h1 { font-family: 'Monda', sans-serif; font-weight:700; font-size: 80px; margin-bottom: 20px; margin-top: 20px;}
 h1 a { text-decoration: none; color: #000100; }
-h2 { font-family: 'Geo', sans-serif; font-size: 40px; }
+h2 { font-family: 'Geo', sans-serif; font-size: 40px; color:#660000; }
 
-h3 { font-family: 'Geo', sans-serif; font-size: 30px; margin-bottom: 0px;}
+h3 { font-family: 'Monda', sans-serif; font-size: 26px; margin-bottom: 6px; padding-top:20px;}
 
 p { margin-top: 0px;}
 
 #upcoming { text-align: center; padding: 0px 0px 20px 0px;}
+#content ul.team {
+	width:512px;
+  list-style-type: none;
+  padding: 0;
+  margin: 44px auto;
+}
+#content ul.team li {
+  width: 190px;
+  float: left;
+  margin-left: 44px;
+}
+#content ul.team img {
+  border: 1px solid #333;
+}
+#content ul.team p {
+  text-align: center;
+}
+
+#content .inventor { text-align: center;}
+
