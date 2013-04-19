@@ -1,5 +1,5 @@
 article:after,aside:after,div:after,form:after,header:after,nav:after,section:after,ul:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
-body { 
+body {
 	margin: 0px;
 	padding: 0px;
 	background: #f2da46 url(/img/j5.png) bottom right no-repeat;
@@ -48,3 +48,6 @@ p { margin-top: 0px;}
 
 #content .inventor { text-align: center;}
 
+video {
+  width: 100%;
+}
