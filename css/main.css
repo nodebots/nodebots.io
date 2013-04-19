@@ -1,3 +1,4 @@
+article:after,aside:after,div:after,form:after,header:after,nav:after,section:after,ul:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
 body { 
 	margin: 0px;
 	padding: 0px;
@@ -27,3 +28,23 @@ h3 { font-family: 'Monda', sans-serif; font-size: 26px; margin-bottom: 6px; padd
 p { margin-top: 0px;}
 
 #upcoming { text-align: center; padding: 0px 0px 20px 0px;}
+#content ul.team {
+	width:512px;
+  list-style-type: none;
+  padding: 0;
+  margin: 44px auto;
+}
+#content ul.team li {
+  width: 190px;
+  float: left;
+  margin-left: 44px;
+}
+#content ul.team img {
+  border: 1px solid #333;
+}
+#content ul.team p {
+  text-align: center;
+}
+
+#content .inventor { text-align: center;}
+
