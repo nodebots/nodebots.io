@@ -3,3 +3,4 @@ exclude:
   - CONTRIBUTING.md
 markdown: redcarpet
 pygments: true
+permalink: none
