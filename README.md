@@ -1,9 +1,5 @@
-#NodeBots
-
 NODEBOTS UNITE
-Please submit pull requests against master.
-=======
-www
 ===
+Please submit pull requests against master.
 
 The NodeBots Website
