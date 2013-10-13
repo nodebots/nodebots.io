@@ -1,47 +1,67 @@
 article:after,aside:after,div:after,form:after,header:after,nav:after,section:after,ul:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
+
 body {
 	margin: 0px;
-	padding: 0px;
+	padding: 0 0 400px;
 	background: #f3df49 url(/img/nodebot.png) bottom right no-repeat;
 
 	background-attachment: fixed;
 	margin: 0;
-	font: 16px/22px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: 16px/1.6em 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #333;
 }
+
 a, a:link, a:visited { color: #000100; font-weight: bold;}
-#wrapper { margin: 0px auto; background: white; padding: 0px; width: 720px; border: 1px solid #6d6d6d; border-top: 0px; border-bottom: 0px}
+
+#wrapper { margin: 0px auto; background: white; padding: 0px; max-width: 720px; border: 1px solid #DDD; border-top: 0px; border-bottom: 0px;}
+
 #holder { padding: 0px 20px 60px;line-height: 1.2;}
 
-#header { padding-top: 20px; text-align: center;padding-bottom: 00px;}
+#header { padding-top: 20px; text-align: center; padding-bottom: 0px;}
 
 #organizers, #footer { font-size: 70%; background: #000100; padding: 8px; text-align: center; color:white;}
 
 #organizers p, #footer p { padding: 0px; margin: 2px 0px;}
+
 #footer a, #footer a:visited, #footer a:link, #organizers a, #organizers a:visited, #organizers a:link  { color:#efefef;}
-h1 { font-family: 'Monda', sans-serif; font-weight:700; font-size: 80px; margin-bottom: 20px; margin-top: 20px;}
+
+h1 { font-family: 'Monda', sans-serif; font-weight:700; font-size: 80px; margin-bottom: 30px; margin-top: 20px;}
+
 h1 a { text-decoration: none; color: #000100; }
-h2 { font-family: 'Geo', sans-serif; font-size: 40px; color:#660000; }
+
+h2 { font-family: 'Geo', sans-serif; font-size: 40px; color:#660000; margin: 0.5em 0; }
 
 h3 { font-family: 'Monda', sans-serif; font-size: 26px; margin-bottom: 6px; padding-top:20px;}
 
-p { margin-top: 0px;}
+p { margin-top: 0px; line-height: 1.6em}
+
+ul{ padding-left: 20px}
+
+li{ margin:0 0 0.6em}
 
 .flash { text-align: center; padding: 0px 0px 20px 0px; font-size: 25px;}
+
+#content #mc_embed_signup form {
+  padding: 0;
+}
+
 #content ul.team {
 	width:512px;
   list-style-type: none;
   padding: 0;
   margin: 44px auto;
 }
+
 #content ul.team li {
   width: 190px;
   float: left;
   margin-left: 44px;
 }
+
 #content ul.team img {
   border: 1px solid #333;
 }
+
 #content ul.team p {
   text-align: center;
 }
@@ -50,4 +70,17 @@ p { margin-top: 0px;}
 
 video {
   width: 100%;
+}
+
+.gh{
+  opacity: 0.6;
+}
+.gh:hover{
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    background-position: bottom center;
+  }
 }
