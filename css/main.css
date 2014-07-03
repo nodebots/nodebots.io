@@ -1,23 +1,86 @@
-article:after,aside:after,div:after,form:after,header:after,nav:after,section:after,ul:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
-
 body {
-	margin: 0px;
-	padding: 0 0 400px;
-	background: #f3df49 url(/img/nodebot.png) bottom right no-repeat;
-
-	background-attachment: fixed;
 	margin: 0;
+	padding: 0;
 	font: 16px/1.6em 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #333;
 }
 
-a, a:link, a:visited { color: #000100; font-weight: bold;}
+a { text-decoration: none; color:rgb(180,30,30);}
 
-#wrapper { margin: 0px auto; background: white; padding: 0px; max-width: 720px; border: 1px solid #DDD; border-top: 0px; border-bottom: 0px;}
+#header {
+  margin: 0 0 200px;
+  text-align: center;
+  height: 250px;
+  background: #222 url("/img/nodebots-day-pan.jpg") center top no-repeat;
+  background-size: 100% auto;
+  background-size: cover;
+}
 
-#holder { padding: 0px 20px 60px;line-height: 1.2;}
+#header .notice{
+  display: none;
+  width:200px;
+  height:200px;
+  position: relative;
+  top: -268px;
+  left:31%;
+  background: url("/img/burst.png") center center no-repeat;
+  opacity:0;
+  -webkit-transform:  rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-animation: spinfade 1s 1s forwards;
+  animation: spinfade 1s 1s forwards;
+}
+@media all and (min-width: 750px){
+  #header .notice{
+    display: inline-block;
+  }
+}
 
-#header { padding-top: 20px; text-align: center; padding-bottom: 0px;}
+.notice h1{
+  font-size:16px;
+  line-height: 1.2em;
+  text-align: left;
+  width:150px;
+  margin:55px 0 10px 35px;
+  line-height:1.5em;
+  color:#F8E01E;
+}
+.notice p{
+  color:white;
+  font-size: 12px;
+}
+.notice h1, .notice h2, .notice p{
+  font-family: "Andale Mono", monospace;
+}
+
+#header .badges {
+  position: relative;
+  top:-220px;
+  text-align: right;
+  padding-right: 8%;
+}
+.badges a{
+  width:50px;
+  height:50px;
+  display: inline-block;
+}
+.badges .github{
+  background: url("/img/badge-github.png") center center no-repeat;
+  background-size:80% 80%;
+}
+.badges .twitter{
+  background: url("/img/badge-twitter.png") center center no-repeat;
+  background-size:80% 80%;
+}
+.leaflet-container .leaflet-popup-content, .leaflet-container .leaflet-popup-content a{
+  font-size: 18px;
+  font-family: Andale Mono, monospace;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(180,30,30);
+}
+.content { max-width: 590px; margin: 0 auto; padding: 0 8px;}
 
 #organizers, #footer { font-size: 70%; background: #000100; padding: 8px; text-align: center; color:white;}
 
@@ -25,15 +88,22 @@ a, a:link, a:visited { color: #000100; font-weight: bold;}
 
 #footer a, #footer a:visited, #footer a:link, #organizers a, #organizers a:visited, #organizers a:link  { color:#efefef;}
 
-h1 { font-family: 'Monda', sans-serif; font-weight:700; font-size: 80px; margin-bottom: 30px; margin-top: 20px;}
+h1 { font-family: 'Monda', sans-serif;  font-size: 66px; font-weight:400; margin-bottom: 30px; margin-top: 80px;}
+/* font-size: 72px; */
 
-h1 a { text-decoration: none; color: #000100; }
+h1 a { text-decoration: none; color: #111;}
 
-h2 { font-family: 'Geo', sans-serif; font-size: 40px; color:#660000; margin: 0.5em 0; }
+h2 { font-family: 'Monda', sans-serif; font-size: 30px; margin: 40px 0 40px; }
+
+header h2 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 200; color: #333; margin: 0.5em 0; }
 
 h3 { font-family: 'Monda', sans-serif; font-size: 26px; margin-bottom: 6px; padding-top:20px;}
 
-p { margin-top: 0px; line-height: 1.6em}
+p, ul {margin:0 0 40px;}
+
+p {  line-height: 1.6em}
+
+p img { max-width: 100%; margin: 0 auto; display: block;}
 
 ul{ padding-left: 20px}
 
@@ -41,32 +111,32 @@ li{ margin:0 0 0.6em}
 
 .flash { text-align: center; padding: 0px 0px 20px 0px; font-size: 25px;}
 
-#content #mc_embed_signup form {
+.content #mc_embed_signup form {
   padding: 0;
 }
 
-#content ul.team {
+.content ul.team {
 	width:512px;
   list-style-type: none;
   padding: 0;
   margin: 44px auto;
 }
 
-#content ul.team li {
+.content ul.team li {
   width: 190px;
   float: left;
   margin-left: 44px;
 }
 
-#content ul.team img {
+.content ul.team img {
   border: 1px solid #333;
 }
 
-#content ul.team p {
+.content ul.team p {
   text-align: center;
 }
 
-#content .inventor { text-align: center;}
+.content .inventor { text-align: center;}
 
 video {
   width: 100%;
@@ -79,8 +149,136 @@ video {
   opacity: 0.9;
 }
 
-@media only screen and (max-width: 720px) {
-  body {
-    background-position: bottom center;
+footer{
+  margin: 100px 0 0;
+}
+
+.map{
+  height: 400px;
+  margin-bottom: 40px;
+  background: #222;
+  width:100%;
+  border: solid 2px #222;
+  border-left: 0 none;
+  border-right: 0 none;
+}
+
+.nodebot{
+  margin:0 auto;
+  z-index:2;
+  opacity: 1;
+  width:250px; /* all the nested css is done as percentages of this, so you can scale it to your <3's content */
+  height:250px;
+  background-color: #F8E01E;
+  position:relative;
+  top:40px;
+}
+.nodebot .icon{
+  position:absolute;
+  bottom:8%;
+  right:8%;
+  width:45.6%;
+  height:50%;
+}
+.nodebot .icon * {
+  background: #2e2e2c;
+}
+.nodebot .icon .bobble{
+  width:12.5%;
+  height:12%;
+  border-radius: 100%;
+  margin:5% auto -3.8%;
+}
+.nodebot .antenna{
+  width:6%;
+  margin:0 auto 4%;
+  height:16.5%;
+  border-bottom-left-radius: 80% 30%;
+  border-bottom-right-radius: 80% 30%;
+}
+.nodebot .head{
+  width: 100%;
+  height: 48.5%;
+  border-top-left-radius: 15% 25%;
+  border-top-right-radius: 15% 25%;
+  position:relative;
+}
+.nodebot .head .eye{
+  width:18%;
+  height:33.5%;
+  margin:0 18.2%;
+  border-radius: 100%;
+  background-color: #F8E01E;
+  display: inline-block;
+  position:absolute;
+  top:26%;
+  left: 0px;
+  -webkit-animation: blink 5s 2s infinite;
+  animation: blink 5s 2s infinite;
+  /*-webkit-animation: look 1s 1s infinite alternate;*/
+  /*animation: look 1s 1s infinite alternate;*/
+}
+.nodebot .eye.right{
+  left: auto;
+  right:0;
+}
+.nodebot .head .eye.blink {
+  height: 6%;
+  top:36%;
+  border-radius: 0;
+  background-color: #000;
+}
+.nodebot .neck{
+  border-radius: 20px;
+  width: 69%;
+  height: 6%;
+  margin: 3.6% auto 0;
+}
+.nodebot .neck:last-child{
+  width: 48%;
+}
+
+@-webkit-keyframes blink {
+  0%, 4%, 8%, 100%{
+    height:33.5%;
+    border-radius: 100%;
+    background-color: #F8E01E;
+    top:26%;
+  }
+  2%, 6% {
+    height: 6%;
+    top:36%;
+    border-radius: 0;
+    background-color: #000;
+  }
+}
+
+@keyframes blink {
+  0%, 4%, 8%, 100%{
+    height:33.5%;
+    border-radius: 100%;
+    background-color: #F8E01E;
+    top:26%;
+  }
+  2%, 6% {
+    height: 6%;
+    top:36%;
+    border-radius: 0;
+    background-color: #000;
+  }
+}
+
+@-webkit-keyframes look {
+  to {
+    margin-top:16%;
+  }
+}
+
+@-webkit-keyframes spinfade {
+  to {
+    -webkit-transform:  rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity:1;
   }
 }
