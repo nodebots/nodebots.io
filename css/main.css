@@ -215,8 +215,6 @@ footer{
   left: 0px;
   -webkit-animation: blink 5s 2s infinite;
   animation: blink 5s 2s infinite;
-  /*-webkit-animation: look 1s 1s infinite alternate;*/
-  /*animation: look 1s 1s infinite alternate;*/
 }
 .nodebot .eye.right{
   left: auto;
@@ -268,9 +266,12 @@ footer{
   }
 }
 
-@-webkit-keyframes look {
+@keyframes spinfade {
   to {
-    margin-top:16%;
+    -webkit-transform:  rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity:1;
   }
 }
 
