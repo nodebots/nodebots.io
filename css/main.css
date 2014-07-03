@@ -51,7 +51,7 @@ a { text-decoration: none; color:rgb(180,30,30);}
   font-size: 12px;
 }
 .notice h1, .notice h2, .notice p{
-  font-family: "Andale Mono", monospace;
+  font-family: "Andale Mono", AndaleMono, Consolas, monospace;
 }
 
 #header .badges {
@@ -75,7 +75,7 @@ a { text-decoration: none; color:rgb(180,30,30);}
 }
 .leaflet-container .leaflet-popup-content, .leaflet-container .leaflet-popup-content a{
   font-size: 18px;
-  font-family: Andale Mono, monospace;
+  font-family: "Andale Mono", AndaleMono, Consolas, monospace;
   text-align: center;
   font-weight: bold;
   color: rgb(180,30,30);
