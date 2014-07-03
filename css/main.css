@@ -111,32 +111,31 @@ li{ margin:0 0 0.6em}
 
 .flash { text-align: center; padding: 0px 0px 20px 0px; font-size: 25px;}
 
-.content #mc_embed_signup form {
+#mc_embed_signup form {
   padding: 0;
 }
 
-.content ul.team {
+.team {
 	width:512px;
   list-style-type: none;
   padding: 0;
-  margin: 44px auto;
+  margin: 44px auto 0;
 }
 
-.content ul.team li {
+.team li {
   width: 190px;
-  float: left;
+  display: inline-block;
   margin-left: 44px;
-}
-
-.content ul.team img {
-  border: 1px solid #333;
-}
-
-.content ul.team p {
   text-align: center;
 }
 
-.content .inventor { text-align: center;}
+.team img, .inventor img {
+  border: 1px solid #333;
+}
+
+.inventor {
+  text-align: center;
+}
 
 video {
   width: 100%;
