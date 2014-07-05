@@ -11,7 +11,7 @@ a { text-decoration: none; color:rgb(180,30,30);}
   margin: 0 0 200px;
   text-align: center;
   height: 250px;
-  background: #222 url("/img/nodebots-day-pan.jpg") center top no-repeat;
+  background: #222 url("/img/nodebots-day-pan-lg.jpg") center top no-repeat;
   background-size: 100% auto;
   background-size: cover;
 }
@@ -31,9 +31,24 @@ a { text-decoration: none; color:rgb(180,30,30);}
   -webkit-animation: spinfade 1s 1s forwards;
   animation: spinfade 1s 1s forwards;
 }
+#header .credit {
+  visibility: hidden;
+  position: absolute;
+  top: 226px;
+  left: 6px;
+  font-size: 10px;
+  color: #fff;
+  opacity: 0.5;
+}
+#header .credit:hover{
+  opacity: 1;
+}
 @media all and (min-width: 750px){
   #header .notice{
     display: inline-block;
+  }
+  #header .credit{
+   visibility: visible;
   }
 }
 
@@ -60,6 +75,7 @@ a { text-decoration: none; color:rgb(180,30,30);}
   text-align: right;
   padding-right: 8%;
 }
+
 .badges a{
   width:50px;
   height:50px;
