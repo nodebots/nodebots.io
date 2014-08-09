@@ -28,6 +28,6 @@ For previewing the site locally:
 
 - and start up the jekyll server:
 
-  `$ jekyll server --watch`
+  `$ bundle exec jekyll server --watch`
 
 - Then you can view the site at http://localhost:4000/
