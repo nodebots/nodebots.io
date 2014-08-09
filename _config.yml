@@ -2,5 +2,5 @@ exclude:
   - README.md
   - CONTRIBUTING.md
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: none
