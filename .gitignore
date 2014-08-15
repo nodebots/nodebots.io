@@ -4,3 +4,4 @@
 /public/css/*.css
 .notes
 /_site
+.DS_Store
