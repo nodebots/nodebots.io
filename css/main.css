@@ -63,7 +63,7 @@ a { text-decoration: none; color:rgb(180,30,30);}
 }
 .notice p{
   color:white;
-  font-size: 12px;
+  font-size: 14px;
 }
 .notice h1, .notice h2, .notice p{
   font-family: "Andale Mono", AndaleMono, Consolas, monospace;
