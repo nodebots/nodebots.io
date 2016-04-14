@@ -32,4 +32,4 @@ For previewing the site locally:
 
   `$ jekyll server --watch`
 
-- Then you can view the site at http://localhost:4000/
+- Then you can view the site at [http://localhost:4000/](http://localhost:4000/)
