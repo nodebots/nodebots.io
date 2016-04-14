@@ -1,7 +1,7 @@
 exclude:
   - README.md
   - CONTRIBUTING.md
-highlighter: pygments
+highlighter: rouge
 permalink: none
 defaults:
   -
