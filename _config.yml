@@ -3,6 +3,8 @@ exclude:
   - CONTRIBUTING.md
 highlighter: rouge
 permalink: none
+sass:
+  style: compressed
 defaults:
   -
     scope:
