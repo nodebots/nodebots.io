@@ -270,5 +270,13 @@
     ],
     "name":"NodeBots Washington DC",
     "url":"https://https://nodedc.github.io/bots/"
+  },
+  {
+    "coords":[
+      35.6732615,
+      139.5699582
+    ],
+    "name":"Nodebots Tokyo",
+    "url":"http://nodebots.connpass.com/"
   }
 ]
