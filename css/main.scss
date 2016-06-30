@@ -10,16 +10,128 @@ body {
 
 a {
   text-decoration: none;
-  color:rgb(180,30,30);
+  color: #0190ff;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Monda', sans-serif;
+}
+
+h1 {
+  margin-top: 1.4em;
+  font-size: 3.5em;
+}
+
+h2 {
+  margin: 0 0 .5em;
+  font-size: 1.3em;
+}
+
+h3 { 
+  margin: 1.5em 0 .5em;
+}
+
+h4 {
+  margin: 1em 0 0;
+}
+
+img { 
+  max-width: 100%;
+}
+
+ul { 
+  padding-left: 20px;
+}
+
+li { 
+  margin:0 0 0.6em;
+}
+
+.gray {
+  background: #F4F4F4;
+}
+
+/*------------------*/
+/*------- Nav ------*/    
+/*------------------*/
+
+nav {
+  background: #fedd00;
+  text-align: center;
+  font-family: 'Monda', sans-serif;
+  font-size: 1.1em;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+
+  .nav-container {
+    max-width: 950px;
+    margin: auto;
+    padding: .25em;
+  }
+
+  a {
+    color: #333;
+    margin: .25em .8em;
+    display: inline-block;
+    position: relative;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:hover:after {
+    content:'';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #333;
+    bottom: -5px;
+    left: 0;
+
+  }
+}
+
+@media (min-width: 32em) { 
+  nav {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 42em) { 
+  nav .nav-container {
+    padding: .7em 0;
+  }
+}
+
+
+/*------------------*/
+/*----- Header ----*/    
+/*------------------*/
+
 #header {
-  margin: 0 0 200px;
+  margin: 6.9em 0 200px;
   text-align: center;
   height: 250px;
-  background: #222 url("/img/nodebots-day-pan-lg.jpg") center top no-repeat;
-  background-size: 100% auto;
-  background-size: cover;
+  background: #222 url("/img/header-pattern.svg") ;
+}
+
+@media (min-width: 22em) {  
+  #header {
+    margin: 4.8em 0 200px;
+  }
+}
+
+@media (min-width: 42em) {  
+  #header {
+    margin: 3.9em 0 200px;
+  }
 }
 
 #header .notice{
@@ -38,26 +150,9 @@ a {
   animation: spinfade 1s 1s forwards;
 }
 
-#header .credit {
-  visibility: hidden;
-  position: absolute;
-  top: 226px;
-  left: 6px;
-  font-size: 10px;
-  color: #fff;
-  opacity: 0.5;
-}
-
-#header .credit:hover {
-  opacity: 1;
-}
-
 @media all and (min-width: 750px) {
   #header .notice{
     display: inline-block;
-  }
-  #header .credit{
-    visibility: visible;
   }
 }
 
@@ -66,14 +161,15 @@ a {
   line-height: 1.2em;
   text-align: left;
   width:150px;
-  margin:55px 0 10px 35px;
+  margin:55px 0 0 35px;
   line-height:1.5em;
-  color:#F8E01E;
+  color:#333;
 }
 
 .notice p {
-  color:white;
+  color:#333;
   font-size: 14px;
+  margin: 0;
 }
 .notice h1, .notice h2, .notice p {
   font-family: "Andale Mono", AndaleMono, Consolas, monospace;
@@ -106,48 +202,12 @@ a {
   font-weight: bold;
   color: rgb(180,30,30);
 }
-.content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 8px;
-}
 
 #organizers, #footer { font-size: 70%; background: #000100; padding: 8px; text-align: center; color:white;}
 
 #organizers p, #footer p { padding: 0px; margin: 2px 0px;}
 
 #footer a, #footer a:visited, #footer a:link, #organizers a, #organizers a:visited, #organizers a:link  { color:#efefef;}
-
-h1 {
-  font-family: 'Monda', sans-serif;
-  font-size: 66px; font-weight:400;
-  margin-bottom: 30px;
-  margin-top: 80px;
-  line-height: 0.8;
-}
-/* font-size: 72px; */
-
-h1.events {
-  text-align: center;
-}
-
-h1 a { text-decoration: none; color: #111;}
-
-h2 { font-family: 'Monda', sans-serif; font-size: 30px; margin: 40px 0 40px; }
-
-header h2 { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 200; color: #333; margin: 0.5em 0; }
-
-h3 { font-family: 'Monda', sans-serif; font-size: 26px; margin-bottom: 6px; padding-top:20px;}
-
-p, ul {margin:0 0 40px;}
-
-p {  line-height: 1.6em}
-
-p img { max-width: 100%; margin: 0 auto; display: block;}
-
-ul{ padding-left: 20px}
-
-li{ margin:0 0 0.6em}
 
 .flash { text-align: center; padding: 0px 0px 20px 0px; font-size: 25px;}
 
@@ -181,35 +241,7 @@ video {
   width: 100%;
 }
 
-footer{
-  margin: 100px 0 0;
-}
-
-.map{
-  height: 400px;
-  margin-bottom: 40px;
-  background: #222;
-  width:100%;
-  border: solid 2px #222;
-  border-left: 0 none;
-  border-right: 0 none;
-}
-
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0; overflow:
-  hidden; max-width: 100%;
-  iframe, object, embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.nodebot{
+.nodebot {
   margin:0 auto;
   z-index:2;
   opacity: 1;
@@ -328,5 +360,115 @@ footer{
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
     opacity:1;
+  }
+}
+
+/*------------------*/
+/*----- Content ----*/    
+/*------------------*/
+
+.container {
+  max-width: 950px;
+  margin: auto;
+  padding: 2em 0;
+
+  .content-wrapper {
+    margin: 0 .8em;
+  }
+
+  h2 {
+    background: #fedd00;
+    display: inline-block;
+    padding: .5em;
+  }
+}
+
+@media (min-width: 32em) {
+
+  .container {
+    padding: 3em 0;
+    
+    h2 {
+      font-size: 1.8em;
+    }
+
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media (min-width: 56em) {
+  .container {
+    padding: 4em 0;
+
+    .content-wrapper {
+      margin: 0 1.3em;
+    }
+
+    h2 {
+      font-size: 2.3em;
+    }
+    h3 {
+      font-size: 1.8em;
+    }
+  }
+}
+
+.kit {
+  overflow: auto;
+  border-bottom: 5px solid #e4e3e3;
+  padding: 2em 0;
+}
+
+@media (min-width: 32em) { 
+  h4 {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 38em) { 
+  .kit {
+
+    img {
+      float: left;
+      margin-right: 2em;
+    }
+
+    h4 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (min-width: 56em) { 
+  .kit h4 {
+    font-size: 1.5em;
+  }
+}
+
+
+.map {
+  height: 400px;
+  margin-bottom: 40px;
+  background: #222;
+  width:100%;
+  border: solid 2px #222;
+  border-left: 0 none;
+  border-right: 0 none;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0; overflow:
+  hidden; max-width: 100%;
+  iframe, object, embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
