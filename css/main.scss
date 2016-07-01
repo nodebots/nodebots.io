@@ -448,6 +448,30 @@ video {
   }
 }
 
+#nodebots-day {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: .5em 0 1em;
+
+    li {
+      margin: 0;
+    }
+  }
+
+  .col-50 {
+
+  }
+
+  @media (min-width: 32em) { 
+    .col-50 {
+      width: 50%;
+      display: inline-block;
+      margin-right: -4px;
+      vertical-align: top;
+    }
+  }
+}
 
 .map {
   height: 400px;
