@@ -16,17 +16,22 @@
 </head>
 <body>
   {% include tracking.html %}
+  <nav>
+    <div class="nav-container">
+      <a href="#about">About</a>
+      <a href="#nodebots-day">Nodebots Day</a>
+      <a href="#getting-started">Getting Started</a>
+      <a href="#meetups">Meetups</a>
+    </div>
+  </nav>
   <header id="header">
     <a href="/">{% include nodebot-logo.html %}</a>
     <h1>NodeBots</h1>
     <h2>{{ page.introTitle }}</h2>
     {% include nodebots-day-star.html %}
-    <a class="credit" href="https://twitter.com/cwaring">Photo: Chris Waring</a>
   </header>
 
-  <div class="content">
-    {{ content }}
-  </div>
+  {{ content }}
 
   <footer id="footer">
     <div class="badges">
