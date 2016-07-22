@@ -270,5 +270,13 @@
     ],
     "name":"NodeBots New Zealand",
     "url":"http://www.nodebots.co.nz"
+  },
+  {
+    "coords":[
+      -77.0364,
+      38.8951
+    ],
+    "name":"NodeBots Washington DC",
+    "url":"https://https://nodedc.github.io/bots/"
   }
 ]
