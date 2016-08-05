@@ -19,16 +19,16 @@
   <nav>
     <div class="nav-container">
       <a href="#about">About</a>
-      <a href="#nodebots-day">Nodebots Day</a>
       <a href="#getting-started">Getting Started</a>
       <a href="#meetups">Meetups</a>
+      <a href="#nodebots-day">Nodebots Day</a>
     </div>
   </nav>
   <header id="header">
     <a href="/">{% include nodebot-logo.html %}</a>
     <h1>NodeBots</h1>
     <h2>{{ page.introTitle }}</h2>
-    {% include nodebots-day-star.html %}
+    {{!% include nodebots-day-star.html %}}
   </header>
 
   {{ content }}

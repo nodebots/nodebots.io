@@ -27,8 +27,6 @@ introTitle: Learn how to make robots powered by JavaScript
   </div>
 </div>
 
-{% include nodebots-day.html %}
-
 <div id="getting-started" class="section gray">
   <div class="container">
     <h2>Getting started</h2>
@@ -81,7 +79,7 @@ introTitle: Learn how to make robots powered by JavaScript
     <div class="content-wrapper">
       <p>Around the world you can find a monthly Nodebots meetup event. They all follow the <a href="/conduct.html">Nodebots code of conduct</a> to maintain a safe environment for all to learn.</p>
 
-      <div class="map" id="map"></div>
+      <div class="map" id="meeup-map"></div>
       <ul>
         <li>
           <a href="http://nodebots-sv.github.io/">NodeBots El Salvador</a> - El Salvador
@@ -135,7 +133,7 @@ introTitle: Learn how to make robots powered by JavaScript
           <a href="https://nodedc.github.io/bots/">NodeBots Washington DC</a> - USA
         </li>
         <li>
-          or <a href="#join">start your own!</a>
+          or <a href="https://github.com/nodebots/nodebots.io/issues/new">start your own!</a>
         </li>
       </ul>
 
@@ -150,6 +148,8 @@ introTitle: Learn how to make robots powered by JavaScript
     </div>
   </div>
 </div>
+
+{% include nodebots-day.html %}
 
 <div id="nodebots-origin" class="section gray">
   <div class="container">
@@ -168,7 +168,7 @@ introTitle: Learn how to make robots powered by JavaScript
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script>
-  var map = L.map('map', {
+  var map = L.map('meeup-map', {
     scrollWheelZoom: false
   }).setView([25, 0], 2);
 
