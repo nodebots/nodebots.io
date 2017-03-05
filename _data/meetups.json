@@ -279,4 +279,12 @@
     "name":"Nodebots Tokyo",
     "url":"http://nodebots.connpass.com/"
   }
+  {
+    "coords":[
+      -20.220615, 
+      57.503591
+    ],
+    "name":"NodebotsMU, Mauritius",
+    "url":"https://github.com/NodeBotsMU/"
+  }
 ]
