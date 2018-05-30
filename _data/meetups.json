@@ -286,5 +286,13 @@
     ],
     "name":"NodebotsMU, Mauritius",
     "url":"https://github.com/NodeBotsMU/"
+  },
+  {
+    "coords":[
+      33.6160373, 
+      72.946023
+    ],
+    "name":"NodeBots Pakistan",
+    "url":"https://github.com/SkyImpel/NodeBotsPK"
   }
 ]
