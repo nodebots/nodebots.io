@@ -1,4 +1,5 @@
 <!doctype html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,9 +12,10 @@
   <meta http-equiv="pragma" content="no-cache" />
   <title>{{ page.title }}</title>
   <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="/img/favicon.png" >
-  <link rel="stylesheet" media="screen" href="/css/main.css" >
+  <link rel="shortcut icon" href="/img/favicon.png">
+  <link rel="stylesheet" media="screen" href="/css/main.css">
 </head>
+
 <body>
   {% include tracking.html %}
   <nav>
@@ -28,7 +30,9 @@
     <a href="/">{% include nodebot-logo.html %}</a>
     <h1>NodeBots</h1>
     <h2>{{ page.introTitle }}</h2>
-    {{% include nodebots-day-star.html %}}
+    {% comment %}
+    include nodebots-day-star.html
+    {% endcomment %}
   </header>
 
   {{ content }}
@@ -40,4 +44,5 @@
     </div>
   </footer>
 </body>
+
 </html>
