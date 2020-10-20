@@ -294,5 +294,13 @@
     ],
     "name":"NodeBots Pakistan",
     "url":"https://github.com/SkyImpel/NodeBotsPK"
+  },
+  {
+    "coords":[
+      18.579253, 
+      73.739154
+    ],
+    "name":"NodeBots India",
+    "url":"https://github.com/nodebotsindia"
   }
 ]
